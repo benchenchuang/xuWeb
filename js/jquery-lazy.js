@@ -8142,35 +8142,35 @@ jQuery(document).ready(function($) {
 	var current_page_id = jQuery('body').attr('data-pid');
 	var current_page_key = jQuery('body').attr('data-pkey');
 
-	if(current_page_id != '' && current_page_id != 'undefined' && current_page_key != '' && current_page_key != 'undefined'){
-	    jQuery.ajax({
-	        url: '/FeiEditor/traffic/log',
-	        type: 'post',
-	        async: true,
-			dataType: "JSON",
-	        data: {
-	        	st_pid: current_page_id,
-	        	st_pkey: current_page_key,
-	        },
-			success: function(rlt) {
-				if(rlt.flag==0){
-					jQuery.getScript("/FeiEditor/bitSite/js/log.js").done(function() {
-						var fingerprint = new Fingerprint({canvas: true}).get();
-						fingerprint  = window.btoa(fingerprint);
-						fingerprint  = window.btoa(fingerprint);
-						jQuery.ajax({
-							url: '/FeiEditor/traffic/log_r',
-							type: 'post',
-							async: true,
-							data: {
-								fprint:fingerprint
-							}
-						});
-					})
-				}
-			}
-	    });
-	}
+	// if(current_page_id != '' && current_page_id != 'undefined' && current_page_key != '' && current_page_key != 'undefined'){
+	//     jQuery.ajax({
+	//         url: 'http://5cb695eb61b87.t73.qifeiye.com/FeiEditor/traffic/log',
+	//         type: 'post',
+	//         async: true,
+	// 		dataType: "JSON",
+	//         data: {
+	//         	st_pid: current_page_id,
+	//         	st_pkey: current_page_key,
+	//         },
+	// 		success: function(rlt) {
+	// 			if(rlt.flag==0){
+	// 				jQuery.getScript("http://5cb695eb61b87.t73.qifeiye.com/FeiEditor/bitSite/js/log.js").done(function() {
+	// 					var fingerprint = new Fingerprint({canvas: true}).get();
+	// 					fingerprint  = window.btoa(fingerprint);
+	// 					fingerprint  = window.btoa(fingerprint);
+	// 					jQuery.ajax({
+	// 						url: 'http://5cb695eb61b87.t73.qifeiye.com/FeiEditor/traffic/log_r',
+	// 						type: 'post',
+	// 						async: true,
+	// 						data: {
+	// 							fprint:fingerprint
+	// 						}
+	// 					});
+	// 				})
+	// 			}
+	// 		}
+	//     });
+	// }
 	setTimeout(function(){
 		try{
 			if(top!=self && !jQuery("body").hasClass("compose-mode")){
@@ -9458,38 +9458,88 @@ function tb_detectMacXFF() {
 var showData=[
 	[
 		{
-			path:'./thumbs/001.jpg',
-			url:'./FeiEditor/thumbs/001.jpg'
+			path:'./thumbs/high-01.jpg',
+			url:'./FeiEditor/thumbs/high-01.jpg'
 		},
 		{
-			path:'./thumbs/002.jpg',
-			url:'./FeiEditor/thumbs/002.jpg'
+			path:'./thumbs/high-02.jpg',
+			url:'./FeiEditor/thumbs/high-02.jpg'
 		},
 		{
-			path:'./thumbs/003.jpg',
-			url:'./FeiEditor/thumbs/003.jpg'
+			path:'./thumbs/high-03.jpg',
+			url:'./FeiEditor/thumbs/high-03.jpg'
 		},
 		{
-			path:'./thumbs/004.jpg',
-			url:'./FeiEditor/thumbs/004.jpg'
+			path:'./thumbs/high-04.jpg',
+			url:'./FeiEditor/thumbs/high-04.jpg'
+		},
+		{
+			path:'./thumbs/high-05.jpg',
+			url:'./FeiEditor/thumbs/high-05.jpg'
+		},
+		{
+			path:'./thumbs/high-06.jpg',
+			url:'./FeiEditor/thumbs/high-06.jpg'
+		},
+		{
+			path:'./thumbs/high-07.jpg',
+			url:'./FeiEditor/thumbs/high-07.jpg'
+		},
+		{
+			path:'./thumbs/high-08.jpg',
+			url:'./FeiEditor/thumbs/high-08.jpg'
+		},
+		{
+			path:'./thumbs/high-09.jpg',
+			url:'./FeiEditor/thumbs/high-09.jpg'
+		},
+		{
+			path:'./thumbs/high-10.jpg',
+			url:'./FeiEditor/thumbs/high-10.jpg'
 		}
 	],
 	[
 		{
-			path:'./thumbs/005.jpg',
-			url:'./FeiEditor/thumbs/005.jpg'
+			path:'./thumbs/private_004.jpg',
+			url:'./FeiEditor/thumbs/private_004.jpg'
 		},
 		{
-			path:'./thumbs/006.jpg',
-			url:'./FeiEditor/thumbs/006.jpg'
+			path:'./thumbs/private_005.jpg',
+			url:'./FeiEditor/thumbs/private_005.jpg'
 		},
 		{
-			path:'./thumbs/001.jpg',
-			url:'./FeiEditor/thumbs/001.jpg'
+			path:'./thumbs/private_002.jpg',
+			url:'./FeiEditor/thumbs/private_002.jpg'
 		},
 		{
-			path:'./thumbs/004.jpg',
-			url:'./FeiEditor/thumbs/004.jpg'
+			path:'./thumbs/private_001.jpg',
+			url:'./FeiEditor/thumbs/private_001.jpg'
+		},
+		{
+			path:'./thumbs/private_003.jpg',
+			url:'./FeiEditor/thumbs/private_003.jpg'
+		}
+	],
+	[
+		{
+			path:'./thumbs/private_001.jpg',
+			url:'./FeiEditor/thumbs/private_001.jpg'
+		},
+		{
+			path:'./thumbs/private_002.jpg',
+			url:'./FeiEditor/thumbs/private_002.jpg'
+		},
+		{
+			path:'./thumbs/private_003.jpg',
+			url:'./FeiEditor/thumbs/private_003.jpg'
+		},
+		{
+			path:'./thumbs/private_004.jpg',
+			url:'./FeiEditor/thumbs/private_004.jpg'
+		},
+		{
+			path:'./thumbs/private_005.jpg',
+			url:'./FeiEditor/thumbs/private_005.jpg'
 		}
 	]
 ]
