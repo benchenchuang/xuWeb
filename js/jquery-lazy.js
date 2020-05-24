@@ -9570,7 +9570,25 @@ function forEachThumbs(data){
 		</div>
 	</div>`
 	});
-	jQuery('.vc-carousel-slideline-inner').html(newHtml);
+	let boxHtml=`
+	<div id="vc-gallery-00000" class="qfe_carousel_slides vc-carousel vc-slide vc-per-view-more vc-per-view-4 vc-build" data-hide-on-end="false" data-per-view="4" data-partial="false" data-mode="horizontal" data-auto-height="true" data-interval="3000" data-wrap="true" data-viewnum="4" data-ride="vc-carousel">
+		<ol class="vc-carousel-indicators" style="bottom:5px;"></ol>
+		<a data-slide="prev" href="#vc-gallery-00000" class="vc-left vc-carousel-control" target="_blank" style="left:-20px;color:#000000;">
+			<span class="icon-prev" style="background-color:transparent;"></span>
+		</a>
+		<a data-slide="next" href="#vc-gallery-00000" class="vc-right vc-carousel-control" target="_blank" style="right:-20px;color:#000000;">
+			<span class="icon-next" style="background-color:transparent;"></span>
+		</a>
+		<section class="vc-carousel-inner" style="">
+			<div class="vc-carousel-slideline" style="width: 3636px;">
+				<div class="vc-carousel-slideline-inner" style="left: -5.55556%;">
+				${newHtml}
+				</div>
+			</div>
+		</section>
+	</div>
+	`
+	jQuery('#swiper_box').html(boxHtml);
 }
 
 
