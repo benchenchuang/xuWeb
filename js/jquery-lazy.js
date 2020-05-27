@@ -9548,9 +9548,10 @@ function selectTab(e){
 	forEachThumbs(showData[e]);
 }
 function selectNav(e){
-	let index = jQuery(e).val()
+	let index = $("#typeSelect").val()
 	forEachThumbs(showData[index]);
 }
+
 function forEachThumbs(data){
 	let newHtml=""
 	data.map(item=>{
