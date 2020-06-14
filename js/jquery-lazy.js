@@ -9543,6 +9543,7 @@ var showData=[
 		}
 	]
 ]
+
 function selectTab(e){
 	$('.pc_menu li').eq(e).addClass('on').siblings().removeClass('on')
 	forEachThumbs(showData[e]);
@@ -9572,7 +9573,7 @@ function forEachThumbs(data){
 	</div>`
 	});
 	let boxHtml=`
-	<div id="vc-gallery-00000" class="qfe_carousel_slides vc-carousel vc-slide vc-per-view-more vc-per-view-4 vc-build" data-hide-on-end="false" data-per-view="4" data-partial="false" data-mode="horizontal" data-auto-height="true" data-interval="3000" data-wrap="true" data-viewnum="4" data-ride="vc-carousel">
+	<div id="vc-gallery-00000" class="qfe_carousel_slides vc-carousel vc-slide vc-per-view-more vc-per-view-3 vc-build" data-hide-on-end="false" data-per-view="3" data-partial="false" data-mode="horizontal" data-auto-height="true" data-interval="3000" data-wrap="true" data-viewnum="3" data-ride="vc-carousel">
 		<ol class="vc-carousel-indicators" style="bottom:5px;"></ol>
 		<a data-slide="prev" href="#vc-gallery-00000" class="vc-left vc-carousel-control" target="_blank" style="left:-20px;color:#000000;">
 			<span class="icon-prev" style="background-color:transparent;"></span>
