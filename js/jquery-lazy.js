@@ -9544,6 +9544,21 @@ var showData=[
 	]
 ]
 
+let newDAta=[]
+for(let i=1;i++;i<=15){
+	let thisIndex = doubleNum(i)
+	newDAta.push({
+		path:'./thumbs/high-'+thisIndex+'.jpg',
+		url:'./FeiEditor/thumbs/high-'+thisIndex+'.jpg'
+	})
+}
+
+console.log(newDAta)
+
+function doubleNum(i){
+	return i<10?'0'+i:i
+}
+
 function selectTab(e){
 	$('.pc_menu li').eq(e).addClass('on').siblings().removeClass('on')
 	forEachThumbs(showData[e]);
