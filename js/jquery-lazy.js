@@ -9455,49 +9455,168 @@ function tb_detectMacXFF() {
     return true;
   }
 };
+
+const highData=[
+    {path: "./thumbs/high-01.jpg", url: "./FeiEditor/thumbs/high-01.jpg"},
+    {path: "./thumbs/high-02.jpg", url: "./FeiEditor/thumbs/high-02.jpg"},
+    {path: "./thumbs/high-03.jpg", url: "./FeiEditor/thumbs/high-03.jpg"},
+    {path: "./thumbs/high-04.jpg", url: "./FeiEditor/thumbs/high-04.jpg"},
+    {path: "./thumbs/high-05.jpg", url: "./FeiEditor/thumbs/high-05.jpg"},
+    {path: "./thumbs/high-06.jpg", url: "./FeiEditor/thumbs/high-06.jpg"},
+    {path: "./thumbs/high-07.jpg", url: "./FeiEditor/thumbs/high-07.jpg"},
+    {path: "./thumbs/high-08.jpg", url: "./FeiEditor/thumbs/high-08.jpg"},
+    {path: "./thumbs/high-09.jpg", url: "./FeiEditor/thumbs/high-09.jpg"},
+    {path: "./thumbs/high-10.jpg", url: "./FeiEditor/thumbs/high-10.jpg"},
+    {path: "./thumbs/high-11.jpg", url: "./FeiEditor/thumbs/high-11.jpg"},
+    {path: "./thumbs/high-12.jpg", url: "./FeiEditor/thumbs/high-12.jpg"},
+    {path: "./thumbs/high-13.jpg", url: "./FeiEditor/thumbs/high-13.jpg"},
+    {path: "./thumbs/high-14.jpg", url: "./FeiEditor/thumbs/high-14.jpg"},
+    {path: "./thumbs/high-15.jpg", url: "./FeiEditor/thumbs/high-15.jpg"},
+    {path: "./thumbs/high-16.jpg", url: "./FeiEditor/thumbs/high-16.jpg"},
+    {path: "./thumbs/high-17.jpg", url: "./FeiEditor/thumbs/high-17.jpg"},
+    {path: "./thumbs/high-18.jpg", url: "./FeiEditor/thumbs/high-18.jpg"},
+    {path: "./thumbs/high-19.jpg", url: "./FeiEditor/thumbs/high-19.jpg"},
+    {path: "./thumbs/high-20.jpg", url: "./FeiEditor/thumbs/high-20.jpg"},
+    {path: "./thumbs/high-21.jpg", url: "./FeiEditor/thumbs/high-21.jpg"},
+    {path: "./thumbs/high-22.jpg", url: "./FeiEditor/thumbs/high-22.jpg"},
+    {path: "./thumbs/high-23.jpg", url: "./FeiEditor/thumbs/high-23.jpg"},
+    {path: "./thumbs/high-24.jpg", url: "./FeiEditor/thumbs/high-24.jpg"},
+    {path: "./thumbs/high-25.jpg", url: "./FeiEditor/thumbs/high-25.jpg"},
+    {path: "./thumbs/high-26.jpg", url: "./FeiEditor/thumbs/high-26.jpg"},
+    {path: "./thumbs/high-27.jpg", url: "./FeiEditor/thumbs/high-27.jpg"},
+    {path: "./thumbs/high-28.jpg", url: "./FeiEditor/thumbs/high-28.jpg"},
+    {path: "./thumbs/high-29.jpg", url: "./FeiEditor/thumbs/high-29.jpg"},
+    {path: "./thumbs/high-30.jpg", url: "./FeiEditor/thumbs/high-30.jpg"},
+    {path: "./thumbs/high-31.jpg", url: "./FeiEditor/thumbs/high-31.jpg"},
+    {path: "./thumbs/high-32.jpg", url: "./FeiEditor/thumbs/high-32.jpg"},
+    {path: "./thumbs/high-33.jpg", url: "./FeiEditor/thumbs/high-33.jpg"},
+    {path: "./thumbs/high-34.jpg", url: "./FeiEditor/thumbs/high-34.jpg"},
+    {path: "./thumbs/high-35.jpg", url: "./FeiEditor/thumbs/high-35.jpg"},
+    {path: "./thumbs/high-36.jpg", url: "./FeiEditor/thumbs/high-36.jpg"},
+    {path: "./thumbs/high-37.jpg", url: "./FeiEditor/thumbs/high-37.jpg"},
+    {path: "./thumbs/high-38.jpg", url: "./FeiEditor/thumbs/high-38.jpg"},
+    {path: "./thumbs/high-39.jpg", url: "./FeiEditor/thumbs/high-39.jpg"},
+    {path: "./thumbs/high-40.jpg", url: "./FeiEditor/thumbs/high-40.jpg"},
+    {path: "./thumbs/high-41.jpg", url: "./FeiEditor/thumbs/high-41.jpg"},
+    {path: "./thumbs/high-42.jpg", url: "./FeiEditor/thumbs/high-42.jpg"},
+    {path: "./thumbs/high-43.jpg", url: "./FeiEditor/thumbs/high-43.jpg"},
+    {path: "./thumbs/high-44.jpg", url: "./FeiEditor/thumbs/high-44.jpg"},
+    {path: "./thumbs/high-45.jpg", url: "./FeiEditor/thumbs/high-45.jpg"},
+    {path: "./thumbs/high-46.jpg", url: "./FeiEditor/thumbs/high-46.jpg"},
+    {path: "./thumbs/high-47.jpg", url: "./FeiEditor/thumbs/high-47.jpg"},
+    {path: "./thumbs/high-48.jpg", url: "./FeiEditor/thumbs/high-48.jpg"},
+    {path: "./thumbs/high-49.jpg", url: "./FeiEditor/thumbs/high-49.jpg"},
+    {path: "./thumbs/high-50.jpg", url: "./FeiEditor/thumbs/high-50.jpg"},
+    {path: "./thumbs/high-51.jpg", url: "./FeiEditor/thumbs/high-51.jpg"},
+    {path: "./thumbs/high-52.jpg", url: "./FeiEditor/thumbs/high-52.jpg"},
+    {path: "./thumbs/high-53.jpg", url: "./FeiEditor/thumbs/high-53.jpg"},
+    {path: "./thumbs/high-54.jpg", url: "./FeiEditor/thumbs/high-54.jpg"},
+    {path: "./thumbs/high-55.jpg", url: "./FeiEditor/thumbs/high-55.jpg"},
+    {path: "./thumbs/high-56.jpg", url: "./FeiEditor/thumbs/high-56.jpg"},
+    {path: "./thumbs/high-57.jpg", url: "./FeiEditor/thumbs/high-57.jpg"},
+    {path: "./thumbs/high-58.jpg", url: "./FeiEditor/thumbs/high-58.jpg"},
+    {path: "./thumbs/high-59.jpg", url: "./FeiEditor/thumbs/high-59.jpg"},
+    {path: "./thumbs/high-60.jpg", url: "./FeiEditor/thumbs/high-60.jpg"},
+    {path: "./thumbs/high-61.jpg", url: "./FeiEditor/thumbs/high-61.jpg"},
+    {path: "./thumbs/high-62.jpg", url: "./FeiEditor/thumbs/high-62.jpg"},
+    {path: "./thumbs/high-63.jpg", url: "./FeiEditor/thumbs/high-63.jpg"},
+    {path: "./thumbs/high-64.jpg", url: "./FeiEditor/thumbs/high-64.jpg"},
+    {path: "./thumbs/high-65.jpg", url: "./FeiEditor/thumbs/high-65.jpg"},
+    {path: "./thumbs/high-66.jpg", url: "./FeiEditor/thumbs/high-66.jpg"},
+    {path: "./thumbs/high-67.jpg", url: "./FeiEditor/thumbs/high-67.jpg"},
+    {path: "./thumbs/high-68.jpg", url: "./FeiEditor/thumbs/high-68.jpg"},
+    {path: "./thumbs/high-69.jpg", url: "./FeiEditor/thumbs/high-69.jpg"},
+    {path: "./thumbs/high-70.jpg", url: "./FeiEditor/thumbs/high-70.jpg"},
+    {path: "./thumbs/high-71.jpg", url: "./FeiEditor/thumbs/high-71.jpg"},
+    {path: "./thumbs/high-72.jpg", url: "./FeiEditor/thumbs/high-72.jpg"},
+    {path: "./thumbs/high-73.jpg", url: "./FeiEditor/thumbs/high-73.jpg"},
+    {path: "./thumbs/high-74.jpg", url: "./FeiEditor/thumbs/high-74.jpg"},
+    {path: "./thumbs/high-75.jpg", url: "./FeiEditor/thumbs/high-75.jpg"},
+    {path: "./thumbs/high-76.jpg", url: "./FeiEditor/thumbs/high-76.jpg"},
+    {path: "./thumbs/high-77.jpg", url: "./FeiEditor/thumbs/high-77.jpg"},
+    {path: "./thumbs/high-78.jpg", url: "./FeiEditor/thumbs/high-78.jpg"},
+    {path: "./thumbs/high-79.jpg", url: "./FeiEditor/thumbs/high-79.jpg"},
+    {path: "./thumbs/high-80.jpg", url: "./FeiEditor/thumbs/high-80.jpg"},
+    {path: "./thumbs/high-81.jpg", url: "./FeiEditor/thumbs/high-81.jpg"},
+    {path: "./thumbs/high-82.jpg", url: "./FeiEditor/thumbs/high-82.jpg"},
+    {path: "./thumbs/high-83.jpg", url: "./FeiEditor/thumbs/high-83.jpg"},
+    {path: "./thumbs/high-84.jpg", url: "./FeiEditor/thumbs/high-84.jpg"},
+    {path: "./thumbs/high-85.jpg", url: "./FeiEditor/thumbs/high-85.jpg"},
+    {path: "./thumbs/high-86.jpg", url: "./FeiEditor/thumbs/high-86.jpg"},
+    {path: "./thumbs/high-87.jpg", url: "./FeiEditor/thumbs/high-87.jpg"},
+    {path: "./thumbs/high-88.jpg", url: "./FeiEditor/thumbs/high-88.jpg"},
+    {path: "./thumbs/high-89.jpg", url: "./FeiEditor/thumbs/high-89.jpg"},
+    {path: "./thumbs/high-90.jpg", url: "./FeiEditor/thumbs/high-90.jpg"},
+    {path: "./thumbs/high-91.jpg", url: "./FeiEditor/thumbs/high-91.jpg"},
+    {path: "./thumbs/high-92.jpg", url: "./FeiEditor/thumbs/high-92.jpg"},
+    {path: "./thumbs/high-93.jpg", url: "./FeiEditor/thumbs/high-93.jpg"},
+    {path: "./thumbs/high-94.jpg", url: "./FeiEditor/thumbs/high-94.jpg"},
+    {path: "./thumbs/high-95.jpg", url: "./FeiEditor/thumbs/high-95.jpg"},
+    {path: "./thumbs/high-96.jpg", url: "./FeiEditor/thumbs/high-96.jpg"},
+    {path: "./thumbs/high-97.jpg", url: "./FeiEditor/thumbs/high-97.jpg"},
+    {path: "./thumbs/high-98.jpg", url: "./FeiEditor/thumbs/high-98.jpg"},
+    {path: "./thumbs/high-99.jpg", url: "./FeiEditor/thumbs/high-99.jpg"},
+    {path: "./thumbs/high-100.jpg", url: "./FeiEditor/thumbs/high-100.jpg"},
+    {path: "./thumbs/high-101.jpg", url: "./FeiEditor/thumbs/high-101.jpg"},
+    {path: "./thumbs/high-102.jpg", url: "./FeiEditor/thumbs/high-102.jpg"},
+    {path: "./thumbs/high-103.jpg", url: "./FeiEditor/thumbs/high-103.jpg"},
+    {path: "./thumbs/high-104.jpg", url: "./FeiEditor/thumbs/high-104.jpg"},
+    {path: "./thumbs/high-105.jpg", url: "./FeiEditor/thumbs/high-105.jpg"},
+    {path: "./thumbs/high-106.jpg", url: "./FeiEditor/thumbs/high-106.jpg"},
+    {path: "./thumbs/high-107.jpg", url: "./FeiEditor/thumbs/high-107.jpg"},
+    {path: "./thumbs/high-108.jpg", url: "./FeiEditor/thumbs/high-108.jpg"},
+    {path: "./thumbs/high-109.jpg", url: "./FeiEditor/thumbs/high-109.jpg"},
+    {path: "./thumbs/high-110.jpg", url: "./FeiEditor/thumbs/high-110.jpg"},
+    {path: "./thumbs/high-111.jpg", url: "./FeiEditor/thumbs/high-111.jpg"},
+    {path: "./thumbs/high-112.jpg", url: "./FeiEditor/thumbs/high-112.jpg"},
+    {path: "./thumbs/high-113.jpg", url: "./FeiEditor/thumbs/high-113.jpg"},
+    {path: "./thumbs/high-114.jpg", url: "./FeiEditor/thumbs/high-114.jpg"},
+    {path: "./thumbs/high-115.jpg", url: "./FeiEditor/thumbs/high-115.jpg"},
+    {path: "./thumbs/high-116.jpg", url: "./FeiEditor/thumbs/high-116.jpg"},
+    {path: "./thumbs/high-117.jpg", url: "./FeiEditor/thumbs/high-117.jpg"},
+    {path: "./thumbs/high-118.jpg", url: "./FeiEditor/thumbs/high-118.jpg"},
+    {path: "./thumbs/high-119.jpg", url: "./FeiEditor/thumbs/high-119.jpg"},
+    {path: "./thumbs/high-120.jpg", url: "./FeiEditor/thumbs/high-120.jpg"},
+    {path: "./thumbs/high-121.jpg", url: "./FeiEditor/thumbs/high-121.jpg"},
+    {path: "./thumbs/high-122.jpg", url: "./FeiEditor/thumbs/high-122.jpg"},
+    {path: "./thumbs/high-123.jpg", url: "./FeiEditor/thumbs/high-123.jpg"},
+    {path: "./thumbs/high-124.jpg", url: "./FeiEditor/thumbs/high-124.jpg"},
+    {path: "./thumbs/high-125.jpg", url: "./FeiEditor/thumbs/high-125.jpg"},
+    {path: "./thumbs/high-126.jpg", url: "./FeiEditor/thumbs/high-126.jpg"},
+    {path: "./thumbs/high-127.jpg", url: "./FeiEditor/thumbs/high-127.jpg"},
+    {path: "./thumbs/high-128.jpg", url: "./FeiEditor/thumbs/high-128.jpg"},
+    {path: "./thumbs/high-129.jpg", url: "./FeiEditor/thumbs/high-129.jpg"},
+    {path: "./thumbs/high-130.jpg", url: "./FeiEditor/thumbs/high-130.jpg"},
+    {path: "./thumbs/high-131.jpg", url: "./FeiEditor/thumbs/high-131.jpg"},
+    {path: "./thumbs/high-132.jpg", url: "./FeiEditor/thumbs/high-132.jpg"},
+    {path: "./thumbs/high-133.jpg", url: "./FeiEditor/thumbs/high-133.jpg"},
+    {path: "./thumbs/high-134.jpg", url: "./FeiEditor/thumbs/high-134.jpg"},
+    {path: "./thumbs/high-135.jpg", url: "./FeiEditor/thumbs/high-135.jpg"},
+    {path: "./thumbs/high-136.jpg", url: "./FeiEditor/thumbs/high-136.jpg"},
+    {path: "./thumbs/high-137.jpg", url: "./FeiEditor/thumbs/high-137.jpg"},
+    {path: "./thumbs/high-138.jpg", url: "./FeiEditor/thumbs/high-138.jpg"},
+    {path: "./thumbs/high-139.jpg", url: "./FeiEditor/thumbs/high-139.jpg"},
+    {path: "./thumbs/high-140.jpg", url: "./FeiEditor/thumbs/high-140.jpg"},
+    {path: "./thumbs/high-141.jpg", url: "./FeiEditor/thumbs/high-141.jpg"},
+    {path: "./thumbs/high-142.jpg", url: "./FeiEditor/thumbs/high-142.jpg"},
+    {path: "./thumbs/high-143.jpg", url: "./FeiEditor/thumbs/high-143.jpg"},
+    {path: "./thumbs/high-144.jpg", url: "./FeiEditor/thumbs/high-144.jpg"},
+    {path: "./thumbs/high-145.jpg", url: "./FeiEditor/thumbs/high-145.jpg"},
+    {path: "./thumbs/high-146.jpg", url: "./FeiEditor/thumbs/high-146.jpg"},
+    {path: "./thumbs/high-147.jpg", url: "./FeiEditor/thumbs/high-147.jpg"},
+    {path: "./thumbs/high-148.jpg", url: "./FeiEditor/thumbs/high-148.jpg"},
+    {path: "./thumbs/high-149.jpg", url: "./FeiEditor/thumbs/high-149.jpg"},
+    {path: "./thumbs/high-150.jpg", url: "./FeiEditor/thumbs/high-150.jpg"},
+    {path: "./thumbs/high-151.jpg", url: "./FeiEditor/thumbs/high-151.jpg"},
+    {path: "./thumbs/high-152.jpg", url: "./FeiEditor/thumbs/high-152.jpg"},
+    {path: "./thumbs/high-153.jpg", url: "./FeiEditor/thumbs/high-153.jpg"},
+    {path: "./thumbs/high-154.jpg", url: "./FeiEditor/thumbs/high-154.jpg"},
+    {path: "./thumbs/high-155.jpg", url: "./FeiEditor/thumbs/high-155.jpg"},
+    {path: "./thumbs/high-156.jpg", url: "./FeiEditor/thumbs/high-156.jpg"},
+    {path: "./thumbs/high-157.jpg", url: "./FeiEditor/thumbs/high-157.jpg"},
+]
 var showData=[
-	[
-		{
-			path:'./thumbs/high-01.jpg',
-			url:'./FeiEditor/thumbs/high-01.jpg'
-		},
-		{
-			path:'./thumbs/high-02.jpg',
-			url:'./FeiEditor/thumbs/high-02.jpg'
-		},
-		{
-			path:'./thumbs/high-03.jpg',
-			url:'./FeiEditor/thumbs/high-03.jpg'
-		},
-		{
-			path:'./thumbs/high-04.jpg',
-			url:'./FeiEditor/thumbs/high-04.jpg'
-		},
-		{
-			path:'./thumbs/high-05.jpg',
-			url:'./FeiEditor/thumbs/high-05.jpg'
-		},
-		{
-			path:'./thumbs/high-06.jpg',
-			url:'./FeiEditor/thumbs/high-06.jpg'
-		},
-		{
-			path:'./thumbs/high-07.jpg',
-			url:'./FeiEditor/thumbs/high-07.jpg'
-		},
-		{
-			path:'./thumbs/high-08.jpg',
-			url:'./FeiEditor/thumbs/high-08.jpg'
-		},
-		{
-			path:'./thumbs/high-09.jpg',
-			url:'./FeiEditor/thumbs/high-09.jpg'
-		},
-		{
-			path:'./thumbs/high-10.jpg',
-			url:'./FeiEditor/thumbs/high-10.jpg'
-		}
-	],
+	highData,
 	[
 		{
 			path:'./thumbs/private_004.jpg',
@@ -9544,16 +9663,6 @@ var showData=[
 	]
 ]
 
-let newDAta=[]
-for(let i=1;i++;i<=15){
-	let thisIndex = doubleNum(i)
-	newDAta.push({
-		path:'./thumbs/high-'+thisIndex+'.jpg',
-		url:'./FeiEditor/thumbs/high-'+thisIndex+'.jpg'
-	})
-}
-
-console.log(newDAta)
 
 function doubleNum(i){
 	return i<10?'0'+i:i
@@ -9562,6 +9671,9 @@ function doubleNum(i){
 function selectTab(e){
 	$('.pc_menu li').eq(e).addClass('on').siblings().removeClass('on')
 	forEachThumbs(showData[e]);
+	if(e==0){
+		window.location.reload()
+	}
 }
 function selectNav(e){
 	let index = $("#typeSelect").val()
@@ -9570,6 +9682,10 @@ function selectNav(e){
 
 function forEachThumbs(data){
 	let newHtml=""
+	let widthVal = 3636
+	if(data.length>10){
+		widthVal=36360
+	}
 	data.map(item=>{
 		newHtml+=`<div class="vc-item vc_slide_item vc_slide_post" style="width: 5.55556%; height: 304px;">
 		<div class="vc-inner" style="margin-left:7.5px;margin-right:7.5px;">
@@ -9597,7 +9713,7 @@ function forEachThumbs(data){
 			<span class="icon-next" style="background-color:transparent;"></span>
 		</a>
 		<section class="vc-carousel-inner" style="">
-			<div class="vc-carousel-slideline" style="width: 3636px;">
+			<div class="vc-carousel-slideline" style="width: ${widthVal}px;">
 				<div class="vc-carousel-slideline-inner" style="left: -5.55556%;">
 				${newHtml}
 				</div>
